@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeamiLogin", "NeamiLogin\NeamiLogin.csproj", "{93649857-B92E-4B97-994B-97A32AFCE1C5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{93649857-B92E-4B97-994B-97A32AFCE1C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93649857-B92E-4B97-994B-97A32AFCE1C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93649857-B92E-4B97-994B-97A32AFCE1C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93649857-B92E-4B97-994B-97A32AFCE1C5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DF842A8D-651C-44A2-9A62-1EF028B8E9CA}
+	EndGlobalSection
+EndGlobal
