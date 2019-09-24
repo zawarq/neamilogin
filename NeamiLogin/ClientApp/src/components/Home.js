@@ -5,11 +5,12 @@ export class Home extends Component {
 
     constructor(props) {
         super(props);
-        this.state = { timezones: [], loading: true };
+        this.state = { loading: true };
 
         fetch('api/Account/GetUser')
-            .then(response => response.json())
+            .then(response => { console.log(response); return response.json(); })
             .then(data => {
+                console.log(data);
                 if (data.firstName == null) {
                     this.props.history.push('/login');
                 }
