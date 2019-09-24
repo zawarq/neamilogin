@@ -75,7 +75,7 @@ export class Login extends Component {
             })
             .catch(() => {
                 this.setState({
-                    email: "",
+                    email: this.state.email,
                     password: "",
                     formErrors: { email: '', password: '', login: 'Invalid User name or password' },
                     emailValid: false,
@@ -105,10 +105,6 @@ export class Login extends Component {
                                     <div className="form-group">
                                         <label htmlFor="password">Password:</label>
                                         <input type="password" value={this.state.password} name="password" onChange={this.handleChange} className="form-control" />
-                                    </div>
-                                    <div className="form-group row">
-                                        <label className="col-sm-6"></label>
-                                        <Link to="/register" className="col-sm-6 text-right">Register here</Link>
                                     </div>
                                     <div className="form-group">
                                         <input type="submit" className="btn btn-primary" disabled={!this.validateForm()} />
