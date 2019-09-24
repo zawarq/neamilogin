@@ -45,6 +45,14 @@ namespace NeamiLogin.Controllers
             return StatusCode(401);
         }
 
+        [HttpPost("[action]")]
+        [AllowAnonymous]
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Clear();
+            return Ok();
+        }
+
         [HttpGet("[action]")]
         public User GetUser()
         {
