@@ -67,7 +67,7 @@ export class Login extends Component {
 
     handleSubmit = event => {
         superagent
-            .post('/api/Account/Login')
+            .post('api/Account/Login')
             .send({ email: this.state.email, password: this.state.password })
             .set('Accept', 'application/json')
             .then(() => {

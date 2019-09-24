@@ -27,11 +27,7 @@ namespace NeamiLogin
 
             services.AddDbContext<NeamiLoginContext>(options =>
                 options.UseSQLite(Configuration.GetConnectionString("DefaultConnection")));
-
-            //services.AddIdentity<ApplicationUser, IdentityRole>()
-            //   .AddEntityFrameworkStores<NeamiContext>()
-            //   .AddDefaultTokenProviders();
-
+            
             // In production, the React files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {
