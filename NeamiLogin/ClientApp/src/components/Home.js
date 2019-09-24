@@ -8,9 +8,8 @@ export class Home extends Component {
         this.state = { loading: true };
 
         fetch('api/Account/GetUser')
-            .then(response => { console.log(response); return response.json(); })
+            .then(response => { return response.json(); })
             .then(data => {
-                console.log(data);
                 if (data.firstName == null) {
                     this.props.history.push('/login');
                 }

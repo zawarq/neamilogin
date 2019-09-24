@@ -19,7 +19,7 @@ namespace NeamiLogin.Areas.Identity
                     options.UseSqlite(
                         context.Configuration.GetConnectionString("NeamiContextConnection")));
 
-                services.AddDefaultIdentity<IdentityUser>()
+                services.AddDefaultIdentity<ApplicationUser>()
                     .AddEntityFrameworkStores<NeamiContext>();
             });
         }

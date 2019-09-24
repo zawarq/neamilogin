@@ -54,7 +54,12 @@ namespace NeamiLogin.Controllers
         [HttpGet("[action]")]
         public async Task<ApplicationUser> GetUser()
         {
-            return await _userManager.GetUserAsync(User);
+            ApplicationUser au = await _userManager.GetUserAsync(User);
+            if (au == default(ApplicationUser))
+            {
+                return new ApplicationUser();
+            }
+            return au;
         }
     }
 }
